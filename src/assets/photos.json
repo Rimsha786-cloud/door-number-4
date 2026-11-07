@@ -1,0 +1,242 @@
+{
+ "back-bar": {
+  "sm": "/photos/back-bar-sm.webp",
+  "lg": "/photos/back-bar-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "bar-interior": {
+  "sm": "/photos/bar-interior-sm.webp",
+  "lg": "/photos/bar-interior-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "bar-lights": {
+  "sm": "/photos/bar-lights-sm.webp",
+  "lg": "/photos/bar-lights-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "bartender-garnish": {
+  "sm": "/photos/bartender-garnish-sm.webp",
+  "lg": "/photos/bartender-garnish-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "bartender-mixing": {
+  "sm": "/photos/bartender-mixing-sm.webp",
+  "lg": "/photos/bartender-mixing-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "bartender-pour": {
+  "sm": "/photos/bartender-pour-sm.webp",
+  "lg": "/photos/bartender-pour-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "bartender-shake": {
+  "sm": "/photos/bartender-shake-sm.webp",
+  "lg": "/photos/bartender-shake-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "bartenders-guests": {
+  "sm": "/photos/bartenders-guests-sm.webp",
+  "lg": "/photos/bartenders-guests-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "bottled-cocktails": {
+  "sm": "/photos/bottled-cocktails-sm.webp",
+  "lg": "/photos/bottled-cocktails-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "cocktail-cart": {
+  "sm": "/photos/cocktail-cart-sm.webp",
+  "lg": "/photos/cocktail-cart-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "cocktail-trio": {
+  "sm": "/photos/cocktail-trio-sm.webp",
+  "lg": "/photos/cocktail-trio-lg.webp",
+  "w": 1800,
+  "h": 2250
+ },
+ "dining-room": {
+  "sm": "/photos/dining-room-sm.webp",
+  "lg": "/photos/dining-room-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "dinner-table": {
+  "sm": "/photos/dinner-table-sm.webp",
+  "lg": "/photos/dinner-table-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "friends-cocktails": {
+  "sm": "/photos/friends-cocktails-sm.webp",
+  "lg": "/photos/friends-cocktails-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "golden-cocktail": {
+  "sm": "/photos/golden-cocktail-sm.webp",
+  "lg": "/photos/golden-cocktail-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "green-highball": {
+  "sm": "/photos/green-highball-sm.webp",
+  "lg": "/photos/green-highball-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "grove-night": {
+  "sm": "/photos/grove-night-sm.webp",
+  "lg": "/photos/grove-night-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "guest-bartenders": {
+  "sm": "/photos/guest-bartenders-sm.webp",
+  "lg": "/photos/guest-bartenders-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "guests-at-bar": {
+  "sm": "/photos/guests-at-bar-sm.webp",
+  "lg": "/photos/guests-at-bar-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "guests-stools": {
+  "sm": "/photos/guests-stools-sm.webp",
+  "lg": "/photos/guests-stools-lg.webp",
+  "w": 1125,
+  "h": 1211
+ },
+ "live-music": {
+  "sm": "/photos/live-music-sm.webp",
+  "lg": "/photos/live-music-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "outdoor-event": {
+  "sm": "/photos/outdoor-event-sm.webp",
+  "lg": "/photos/outdoor-event-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "pink-fizz": {
+  "sm": "/photos/pink-fizz-sm.webp",
+  "lg": "/photos/pink-fizz-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "plated-dish": {
+  "sm": "/photos/plated-dish-sm.webp",
+  "lg": "/photos/plated-dish-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "punch-bowl": {
+  "sm": "/photos/punch-bowl-sm.webp",
+  "lg": "/photos/punch-bowl-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "red-cocktail": {
+  "sm": "/photos/red-cocktail-sm.webp",
+  "lg": "/photos/red-cocktail-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "red-cocktails-raised": {
+  "sm": "/photos/red-cocktails-raised-sm.webp",
+  "lg": "/photos/red-cocktails-raised-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "rose-glasses": {
+  "sm": "/photos/rose-glasses-sm.webp",
+  "lg": "/photos/rose-glasses-lg.webp",
+  "w": 1366,
+  "h": 2048
+ },
+ "server-champagne": {
+  "sm": "/photos/server-champagne-sm.webp",
+  "lg": "/photos/server-champagne-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "server-tray": {
+  "sm": "/photos/server-tray-sm.webp",
+  "lg": "/photos/server-tray-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "short-rib": {
+  "sm": "/photos/short-rib-sm.webp",
+  "lg": "/photos/short-rib-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "table-cocktails": {
+  "sm": "/photos/table-cocktails-sm.webp",
+  "lg": "/photos/table-cocktails-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "team-smiles": {
+  "sm": "/photos/team-smiles-sm.webp",
+  "lg": "/photos/team-smiles-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "team-toast": {
+  "sm": "/photos/team-toast-sm.webp",
+  "lg": "/photos/team-toast-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "terrace-busy": {
+  "sm": "/photos/terrace-busy-sm.webp",
+  "lg": "/photos/terrace-busy-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "terrace-dining": {
+  "sm": "/photos/terrace-dining-sm.webp",
+  "lg": "/photos/terrace-dining-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "terrace-evening": {
+  "sm": "/photos/terrace-evening-sm.webp",
+  "lg": "/photos/terrace-evening-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "tiki-row": {
+  "sm": "/photos/tiki-row-sm.webp",
+  "lg": "/photos/tiki-row-lg.webp",
+  "w": 1800,
+  "h": 1200
+ },
+ "tropical-cocktail": {
+  "sm": "/photos/tropical-cocktail-sm.webp",
+  "lg": "/photos/tropical-cocktail-lg.webp",
+  "w": 1800,
+  "h": 2700
+ },
+ "velvet-stools": {
+  "sm": "/photos/velvet-stools-sm.webp",
+  "lg": "/photos/velvet-stools-lg.webp",
+  "w": 1800,
+  "h": 1200
+ }
+}

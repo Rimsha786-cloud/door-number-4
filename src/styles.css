@@ -1,0 +1,246 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Door No. 4 design system — Caribbean Art Deco × contemporary luxury.
+ * Brand palette: deep emerald, warm ivory, muted gold, charcoal, soft beige.
+ * All colours are oklch. Gold is for hairlines/accents; use --gold-ink for
+ * gold-coloured text on ivory (accessible contrast).
+ */
+
+@theme inline {
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 2px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  /* Brand */
+  --color-emerald: var(--emerald);
+  --color-emerald-deep: var(--emerald-deep);
+  --color-ivory: var(--ivory);
+  --color-gold: var(--gold);
+  --color-gold-ink: var(--gold-ink);
+  --color-charcoal: var(--charcoal);
+  --color-beige: var(--beige);
+
+  --ease-deco: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --radius: 2px;
+
+  --emerald: oklch(0.324 0.05 174.5);
+  --emerald-deep: oklch(0.263 0.039 175.8);
+  --ivory: oklch(0.956 0.014 84.6);
+  --gold: oklch(0.74 0.086 82);
+  --gold-ink: oklch(0.495 0.077 77.6);
+  --charcoal: oklch(0.214 0.006 156.7);
+  --beige: oklch(0.867 0.027 82.4);
+
+  --background: var(--ivory);
+  --foreground: var(--charcoal);
+  --card: oklch(0.975 0.01 84.6);
+  --card-foreground: var(--charcoal);
+  --popover: var(--ivory);
+  --popover-foreground: var(--charcoal);
+  --primary: var(--emerald);
+  --primary-foreground: var(--ivory);
+  --secondary: var(--beige);
+  --secondary-foreground: var(--charcoal);
+  --muted: oklch(0.92 0.02 84);
+  --muted-foreground: oklch(0.491 0.009 139.4);
+  --accent: var(--gold);
+  --accent-foreground: var(--charcoal);
+  --destructive: oklch(0.52 0.18 27);
+  --destructive-foreground: var(--ivory);
+  --border: oklch(0.84 0.03 82);
+  --input: oklch(0.8 0.03 82);
+  --ring: var(--gold-ink);
+
+  --shadow-deco: 0 30px 60px -30px color-mix(in oklab, var(--charcoal) 45%, transparent);
+  --overlay-hero:
+    linear-gradient(
+      90deg,
+      color-mix(in oklab, var(--charcoal) 62%, transparent) 0%,
+      color-mix(in oklab, var(--charcoal) 25%, transparent) 55%,
+      transparent 80%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--charcoal) 55%, transparent) 0%,
+      color-mix(in oklab, var(--charcoal) 15%, transparent) 40%,
+      color-mix(in oklab, var(--emerald-deep) 88%, transparent) 100%
+    );
+  --overlay-card: linear-gradient(
+    180deg,
+    transparent 35%,
+    color-mix(in oklab, var(--charcoal) 88%, transparent) 100%
+  );
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "kern";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--charcoal);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+  }
+
+  .tone-dark :focus-visible {
+    outline-color: var(--gold);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* Small uppercase label used above headings */
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+/* Signature arched "doorway" frame */
+@utility arch {
+  border-radius: 999px 999px 0 0;
+  overflow: hidden;
+}
+
+/* Gold hairline */
+@utility hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+@utility container-deco {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 88rem;
+  padding-inline: 1.25rem;
+  @media (width >= 48rem) {
+    padding-inline: 2.5rem;
+  }
+  @media (width >= 80rem) {
+    padding-inline: 4rem;
+  }
+}
+
+@utility tone-dark {
+  color: var(--ivory);
+  --muted-foreground: color-mix(in oklab, var(--beige) 78%, transparent);
+  --border: color-mix(in oklab, var(--gold) 28%, transparent);
+  --ring: var(--gold);
+}
+
+@utility bg-hero-overlay {
+  background: var(--overlay-hero);
+}
+
+@utility bg-card-overlay {
+  background: var(--overlay-card);
+}
+
+@utility shadow-deco {
+  box-shadow: var(--shadow-deco);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee 60s linear infinite;
+}
+
+@utility animate-scroll-cue {
+  animation: scroll-cue 2.2s var(--ease-deco) infinite;
+}
